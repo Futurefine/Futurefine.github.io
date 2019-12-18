@@ -15,7 +15,7 @@
   <meta name="description" content="">
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
-  <title>Hello World ~ 文凯</title>
+  <title>hexo+Github搭建教程 ~ 文凯</title>
 
   <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css"  >
 <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css"  >
@@ -111,7 +111,7 @@
               
                 <p class="mt-3">
                   <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
-                  星期日, 十二月 1日 2019, 1:47 下午
+                  星期三, 十二月 4日 2019, 10:30 晚上
                 </p>
               
 
@@ -120,7 +120,7 @@
                   
                   &nbsp;<i class="far fa-chart-bar"></i>
                   <span class="post-count">
-                    75 字
+                    1.1k 字
                   </span>&nbsp;
                 
 
@@ -128,7 +128,7 @@
                   
                   &nbsp;<i class="far fa-clock"></i>
                   <span class="post-count">
-                      1 分钟
+                      4 分钟
                   </span>&nbsp;
                 
 
@@ -161,15 +161,47 @@
       <div class="py-5 z-depth-3" id="board">
         <div class="post-content mx-auto" id="post">
           <div class="markdown-body">
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;</code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server</code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate</code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy</code></pre>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+            <h1 id="安装所需要的软件"><a href="#安装所需要的软件" class="headerlink" title="安装所需要的软件"></a>安装所需要的软件</h1><p>1.安装<a href="https://nodejs.org/en/" target="blank">Node.js</a><br>    <img src="/2019/12/04/hexo-Github%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/node1.png" srcset="/img/loading.gif" class="" title="下载自己电脑对应版本，然后一直next就可了"><br>2.安装<a href="https://git-scm.com/" target="blank">Git管理工具</a><br>     <img src="/2019/12/04/hexo-Github%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/git.png" srcset="/img/loading.gif" class="" title="下载自己电脑对应版本，然后一直next就可了"></p>
+<h1 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h1><p>上面的安装玩之后，电脑桌面右键，打开Git Bash here<br>    <img src="/2019/12/04/hexo-Github%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/git1.png" srcset="/img/loading.gif" class=""></p>
+<pre><code>$ npm install -g hexo-cli</code></pre><h1 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h1><pre><code>$ cd：D:
+$ hexo init &lt;文件名字&gt;
+$ cd &lt;folder&gt;
+$ npm install</code></pre><p>新建完成后，在D盘目录可以看看到刚才所创建的文件名字，打开文件夹目录结构如下：</p>
+<pre><code>.
+├── _config.yml
+├── package.json
+├── scaffolds
+├── source
+|   ├── _drafts
+|   └── _posts
+└── themes</code></pre><p>现在回到命令窗口，使用一下命令，开启本地预览服务<br>    $ hexo s<br>运行之后打开游览器输入<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 就可以看到下面这个页面，就成功了。<br>    <img src="/2019/12/04/hexo-Github%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/01.png" srcset="/img/loading.gif" class="" title="出现此页面就成功了"></p>
+<p>到这里我们的博客已经在我们的本地搭建好了，但是我们的博客不可能一直自己访问，同时也要展示给其他人看，接下来介绍一下怎么免费的部署到网络上面去，让大家可以访问到你的网站。</p>
+<h1 id="部署到Github"><a href="#部署到Github" class="headerlink" title="部署到Github"></a>部署到Github</h1><p>首先大家要先去注册一个<a href="https://github.com/" target="blank">Github</a>账号，注册如果遇到了问题或者不会注册的可以百度一下。</p>
+<h2 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h2><img src="/2019/12/04/hexo-Github%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/02.png" srcset="/img/loading.gif" class="" title="点击加号选择第一个NEW repository">
+<img src="/2019/12/04/hexo-Github%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/03.png" srcset="/img/loading.gif" class="" title="创建仓库">
+<p>创建完仓库之后如下</p>
+<img src="/2019/12/04/hexo-Github%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/04.png" srcset="/img/loading.gif" class="" title="创建仓库">
+<h2 id="创建SSH-KEY"><a href="#创建SSH-KEY" class="headerlink" title="创建SSH KEY"></a>创建SSH KEY</h2><p>在用户主目录下（C:\Users\Administrator），看看有没有.ssh目录，如果有，再看看这个目录下有没有id_rsa和id_rsa.pub这两个文件，如果已经有了，可直接跳到下一步。如果没有，打开Git Bas，创建SSH Key：</p>
+<pre><code>$ ssh-keygen -t rsa -C &quot;youremail@example.com&quot;</code></pre><p>你需要把邮件地址换成你自己的邮件地址，然后一路回车，使用默认值即可，由于这个Key也不是用于军事目的，所以也无需设置密码。<br>如果一切顺利的话，可以在用户主目录里找到.ssh目录，里面有id_rsa和id_rsa.pub两个文件，这两个就是SSH Key的秘钥对，id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，可以放心地告诉任何人。</p>
+<p>然后打开我们的Github,如下图所示<br>    {% asset_img 05.png 如图所示 %}<br>    {% asset_img 06.png 如图所示 %}<br>上面的操作完成后，接下来在我们的用户目录找到.ssh目录下面的id_rsa.pub打开，复制内容然粘贴在下面②号标记点</p>
+<pre><code>{% asset_img 07.png 添加id_rsa.pub %}</code></pre><p>接下来让我们回到Git Bash进行如下的配置</p>
+<pre><code>$ git config --global user.name &quot;***&quot;// 你的github用户名，非昵称
+$ git config --global user.email  &quot;xxx@qq.com&quot;// 填写你的github注册邮箱</code></pre><h2 id="推送到Github仓库"><a href="#推送到Github仓库" class="headerlink" title="推送到Github仓库"></a>推送到Github仓库</h2><p>找到我们的所创建的博客文件，打开目录找到根目录下面的_config.yml文件，在文件的最下面进行让如下的配置</p>
+<pre><code> deploy:
+   type: git
+   repo: //这个地方填写上面我们创建仓库的时候生成的地址
+   branch: master</code></pre><p>上面的操作完成后我，进行Git Bash操作，执行</p>
+<pre><code>$ hexo d</code></pre><p>执行操作完成后，我们可以看到我们的仓库就会出现相对应的内容，这个时候我们已经将我们的博客推送到我们的Github了，接下面的我们就可以用我们创建好的名字进行访问了。</p>
+<h1 id="hexo主题"><a href="#hexo主题" class="headerlink" title="hexo主题"></a>hexo主题</h1><p>在这里简单说一下hexo主题的配置,这里推荐一下用的比较多的<a href="https://github.com/litten/hexo-theme-yilia" target="blank">Yilia</a>主题</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p> 两种安装方式<br> 第一种打开Git Bash执行下面的命令即安装</p>
+<pre><code>$ git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia</code></pre><p>第二种，进入到主题的Github，直接下载压缩包</p>
+<img src="/2019/12/04/hexo-Github%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/08.png" srcset="/img/loading.gif" class="" title="如图所示">
+<p>下载完成后解压压缩包将文件名字改为yilia，然后放到我们的博客文件里面的themes文件夹下面，然后打开我们根目录下面的_config.yml配置文件修改</p>
+<pre><code>theme: yilia</code></pre><p>到此我们的主题已经更换好了，主题的配置可以参考官方的主题是配置教程。<br>#绑定域名<br>购买域名，域名可以在百度云，腾讯云，阿里云等购买，关于的域名解析大家可以百度</p>
+<h2 id="添加CNAME文件"><a href="#添加CNAME文件" class="headerlink" title="添加CNAME文件"></a>添加CNAME文件</h2><p>在hexo的source文件內，添加CNAME文件，记得不需要添加任何后缀。<br> {% asset_img 09.png 如图所示 %}</p>
+<p>然后在文件中，输入域名信息，不需要添加http://<br>添加完成后，重新部署到github中</p>
+<pre><code>$ hexo g
+$ hexo d</code></pre><p>在 github 上面，打开 username.github.io 项目的（Settings）设置，然后在 GitHub Pages的 Custom domain设置里填上购买的域名。</p>
 
             <hr>
           </div>
@@ -326,7 +358,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "Hello World&nbsp;",
+        "hexo+Github搭建教程&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
