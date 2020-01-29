@@ -120,7 +120,7 @@
                   
                   &nbsp;<i class="far fa-chart-bar"></i>
                   <span class="post-count">
-                    631 字
+                    866 字
                   </span>&nbsp;
                 
 
@@ -128,7 +128,7 @@
                   
                   &nbsp;<i class="far fa-clock"></i>
                   <span class="post-count">
-                      2 分钟
+                      3 分钟
                   </span>&nbsp;
                 
 
@@ -170,7 +170,12 @@
         如果是字符          默认为&#39;\u0000&#39;
         如果是布尔          默认为false
         如果是引用类型      默认为null</code></pre><h2 id="方法区（Method-Area）"><a href="#方法区（Method-Area）" class="headerlink" title="方法区（Method Area）:"></a>方法区（Method Area）:</h2><pre><code>    存储.class相关信息，包含方法的信息。</code></pre><h2 id="本地方法栈（Native-Method-Stack）："><a href="#本地方法栈（Native-Method-Stack）：" class="headerlink" title="本地方法栈（Native Method Stack）："></a>本地方法栈（Native Method Stack）：</h2><pre><code>    与操作系统相关。</code></pre><h2 id="寄存器（Pc-Register）："><a href="#寄存器（Pc-Register）：" class="headerlink" title="寄存器（Pc Register）："></a>寄存器（Pc Register）：</h2><pre><code>    与Pc相关。
-    最快的存储区域，位于 CPU 内部 ^2。然而，寄存器的数量十分有限，所以寄存器根据需求进行分配。我们对其没有直接的控制权，也无法在自己的程序里找到寄存器存在的踪迹</code></pre>
+    最快的存储区域，位于 CPU 内部 ^2。然而，寄存器的数量十分有限，所以寄存器根据需求进行分配。我们对其没有直接的控制权，也无法在自己的程序里找到寄存器存在的踪迹</code></pre><h1 id="局部变量和成员变量"><a href="#局部变量和成员变量" class="headerlink" title="局部变量和成员变量"></a>局部变量和成员变量</h1><p>1.定义的位置不一样【重点】<br>局部变量： 在方法的内部<br>成员变量： 在方法的外部，直接写在类当中</p>
+<p>2.作用范围不一样【重点】<br>局部变量: 只有方法当中才可以使用，出了方法就不能使用了<br>成员变量: 整个类全都可以使用</p>
+<p>3.默认值不一样【重点】<br>局部变量： 没有默认值，如果想要使用，必须手动进行赋值<br>成员变量： 如果没有赋值，会有默认值，规则和数组一样</p>
+<p>4.内存的位置不一样（了解）<br>局部变量： 位于栈内存<br>成员变量:  位于堆内存</p>
+<p>5生命周期不一样（了解）<br>局部变量： 随着方法进栈而诞生，随着方法出栈而消失<br>成员变量： 随着对象创建而诞生，随着对象被垃圾回收而消失</p>
+
             <hr>
           </div>
           <br>
